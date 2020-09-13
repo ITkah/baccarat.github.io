@@ -1,0 +1,93 @@
+html,body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background: #E5E5E5;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: #e2e2e2;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #00850D;
+}
+
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+}
+
+.padding {
+    padding: 0 30px;
+    @media (max-width: 990px) {
+        padding: 0 20px;
+    }
+    @media (max-width: 576px) {
+        padding: 0 15px;
+    }
+}
+
+.padding_mob {
+    padding: 0 30px;
+    @media (max-width: 990px) {
+        padding: 0 20px;
+    }
+    @media (max-width: 576px) {
+        padding: 0;
+    }
+}
+
+.margin {
+    margin-bottom: 55px;
+    @media (max-width: 576px) {
+        margin-bottom: 35px;
+    }
+}
+
+button,
+input,
+select,
+a {
+    outline: none;
+}
+
+main {
+    min-height: calc(100vh - 80px);
+}
+
+a,button {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+textarea {
+    resize: none;
+}

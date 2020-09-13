@@ -1,0 +1,96 @@
+.simple_section {
+    .text_simple {
+        margin-bottom: 30px;
+        @media (max-width: 576px) {
+            margin-bottom: 20px;
+        }
+    }
+    .simple_btn_box {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        @media (max-width: 990px) {
+            justify-content: center;
+        }
+    }
+    .simple_info_wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 25px;
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
+        .simple_box {
+            background: #fff;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, .15);
+            border-radius: 5px;
+        }
+        img {
+            max-width: 100%;
+            height: 125px;
+            object-fit: cover;
+            width: 100%;
+        }
+        .simple_info {
+            margin-bottom: 15px;
+            @media (max-width: 990px) {
+                margin-bottom: 5px;
+            }
+        }
+        .simple_box_info {
+            padding: 20px;
+            @media (max-width: 990px) {
+                padding: 10px;
+            }
+        }
+    }
+}
+
+
+.simple_section {
+    .img_pack {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        @media (max-width: 990px) {
+            grid-template-columns: 1fr;
+            grid-gap: 15px;
+        }
+    }
+    .descript {
+        display: none;
+        @media (max-width: 990px) {
+            display: block;
+            text-align: center;
+            margin: 5px 0 0 0;
+            color: #151515;
+            font: normal .75rem 'Noto Sans', sans-serif;
+        }
+    }
+    .img_pack_box {
+        img {
+            max-width: 100%;
+            max-height: 385px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.box_for_img {
+    display: grid;
+    grid-template-columns: 425px 1fr;
+    grid-gap: 20px;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+        box-sizing: border-box;
+        object-fit: cover;
+    }
+}

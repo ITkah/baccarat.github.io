@@ -1,0 +1,39 @@
+.about_casino_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+    @media (max-width: 990px) {
+        grid-gap: 10px;
+    }
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+    .about_casino_box {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-gap: 15px;
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+        }
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        @media (max-width: 576px) {
+            height: 100px;
+            width: 100%;
+        }
+    }
+}
+
+.about_casino_container {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
+    border-radius: 5px;
+    padding: 30px 25px;
+    background: url(../img/simple/background-know.png) no-repeat center center/cover;
+    @media (max-width: 990px) {
+        padding: 15px;
+    }
+}

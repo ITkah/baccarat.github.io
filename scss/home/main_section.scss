@@ -1,0 +1,85 @@
+.main_section {
+    .main_section_title {
+        text-align: center;
+        margin-bottom: 20px;
+        font: bold 3.125rem "Arial";
+        @media (max-width: 990px) {
+            font: bold 1.2rem "Arial";
+        }
+    }
+    .main_sm_title {
+        font: bold 1.2rem "Arial";
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .main_section_text {
+        max-width: 700px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        font: normal 1.1rem/27px 'Noto Sans', sans-serif;
+        text-align: center;
+        display: block;
+        @media (max-width: 576px) {
+            font: normal .87rem/18px 'Noto Sans', sans-serif;
+        }
+    }
+    .text_simple {
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 25px;
+        @media (max-width: 576px) {
+            margin-top: 15px;
+            text-align: left;
+            padding: 10px 0;
+            border-top: 1px solid #151515;
+            border-bottom: 1px solid #151515;
+        }
+    }
+    .main_section_wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 45px;
+        max-width: 850px;
+        margin: 0 auto;
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+        }
+        .main_box {
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background: #FFF;
+            border: 2px solid #00850D;
+            box-sizing: border-box;
+            border-radius: 5px;
+            cursor: pointer;
+            &:hover {
+                p {
+                    color: #00850D;
+                }
+            }
+            p {
+                text-align: center;
+                transition: .3s;
+            }
+            .main_title {
+                margin-bottom: 3px;
+                font: bold 1.2rem "Arial";
+                color: #151515;
+                @media (max-width: 576px) {
+                    font: bold 1rem "Arial";
+                }
+            }
+            .main_text {
+                font: normal .95rem/19px 'Noto Sans', sans-serif;
+                @media (max-width: 576px) {
+                    font: normal .87rem/18px 'Noto Sans', sans-serif;
+                }
+            }
+        }
+    }
+}
