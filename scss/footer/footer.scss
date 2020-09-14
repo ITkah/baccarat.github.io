@@ -178,24 +178,9 @@ footer {
                 color: #fff;
                 font: bold 1.2rem "Arial";
                 position: relative;
+                transition: .3s;
                 &:hover {
-                    &::before {
-                        width: 100%;
-                        opacity: 1;
-                    }
-                }
-                &::before {
-                    content: '';
-                    height: 2px;
-                    width: 0;
-                    position: absolute;
-                    background: #fff;
-                    display: block;
-                    bottom: -5px;
-                    width: 0;
-                    opacity: 0;
-                    left: 0;
-                    transition: .25s;
+                    color: #FFD400;
                 }
                 @media (max-width: 1280px) {
                     font-size: 1rem;
