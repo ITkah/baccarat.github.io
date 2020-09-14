@@ -251,3 +251,9 @@
         }
     }
 }
+
+.main_about {
+    @media (max-width: 990px) {
+        margin-top: -8px;
+    }
+}
