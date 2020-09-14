@@ -1,0 +1,198 @@
+
+.table_option_wrap {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    @media (max-width: 768px) {
+        max-width: 100%;
+        width: 100%;
+        overflow-y: none;
+        overflow-x: scroll;
+    }
+}
+
+.table_option {
+    margin: 0 auto;
+    @media (max-width: 768px) {
+        width: 800px;
+        padding-bottom: 10px;
+    }
+    .table_option_title {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #00850D;
+        color: #FFF;
+        font: bold 1.2rem "Arial";
+        @media (max-width: 990px) {
+            justify-content: flex-start;
+        }
+    }
+    .table_option_contetn {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    
+    }
+    .table_option_box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        border: 1px solid #CFD3DA;
+        padding: 20px 10px;
+        p:first-child{
+            font: bold 1rem "Arial";
+            margin-bottom: 10px;
+        }
+        p:last-child {
+            font: normal .95rem 'Noto Sans', sans-serif;
+        }
+    }
+    .table_option_footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background: #fff;
+        border: 1px solid #CFD3DA;
+        border-top: none;
+        font: normal .95rem 'Noto Sans', sans-serif;
+      
+        strong {
+            font: bold 1rem "Arial";
+        }
+    }
+}
+
+.main_about {
+    .main_img {
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+        box-sizing: border-box;
+        object-fit: contain;
+        margin-bottom: 20px;
+        @media (max-width: 990px) {
+            margin-bottom: 10px;
+        }
+    }
+    .main_about_title {
+        margin-bottom: 20px;
+        font: bold 2.1rem/38px "Arial";
+        color: #151515;
+        text-align: center;
+        @media (max-width: 990px) {
+            margin-bottom: 10px;
+            font: bold 1.2rem "Arial";
+        }
+    }
+}
+
+.main_about_rait {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    margin-top: 30px;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.main_about_rait_box {
+    padding: 35px 20px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
+    border-radius: 5px;
+    .rait_box_title {
+        font: bold 1.87rem "Arial";
+        text-align: center;
+        margin-bottom: 20px;
+        @media (max-width: 990px) {
+            font: bold 1.2rem "Arial";
+            margin-bottom: 10px;
+        }
+    }
+    .benifest_list {
+        li {
+            margin-bottom: 20px;
+            font: normal .95rem 'Noto Sans', sans-serif;
+            padding-left: 5px;
+            &::before {
+                content: url(../img/banner/chip.svg);
+                position: relative;
+                top: 2px;
+                left: -5px;
+            }
+            @media (max-width: 576px) {
+                font-size: .75rem;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .rait_box_star {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        .star_title {
+            margin-right: 10px;
+            font: normal .95rem 'Noto Sans', sans-serif;
+            @media (max-width: 990px) {
+                font: normal .75rem 'Noto Sans', sans-serif;
+            }
+        }
+        .rait_star_wrap {
+            display: flex;
+            span {
+                margin: 0 2px;
+                position: relative;
+                height: 17px;
+                width: 17px;
+                &::before {
+                    position: absolute;
+                    content: url(../img/banner/star.svg);
+                }
+            }
+        }
+    }
+    .other {
+        padding-top: 10px;
+        border-top: 1px solid #d0d0d0;
+    }
+    .rait_bonus_pay {
+        color: #00850D;
+        text-align: center;
+        font: bold 3.125rem "Arial";
+        margin-bottom: 20px;
+        @media (max-width: 990px) {
+            font: bold 2.5rem "Arial";
+        }
+    }
+    .text_simple {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .rait_bonus_btn {
+        background: #FFD400;
+        border-radius: 5px;
+        padding: 15px 40px;
+        text-transform: uppercase;
+        color: #FFF;
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        font: bold 1.2rem "Arial";
+        transition: .3s;
+        margin: 0 20px;
+        &:hover {
+            background: #e4c217;
+        }
+        @media (max-width: 990px) {
+            font-size: 1rem;
+            padding: 15px 30px;
+        }
+    }
+}
