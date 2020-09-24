@@ -1,4 +1,3 @@
-
 .title_simple {
     color: #151515;
     display: inline-block;
@@ -60,12 +59,14 @@
     }
 }
 
-
-
 .text_simple {
     font: normal .95rem/19px 'Noto Sans', sans-serif;
     span {
         color: #00850d;
+    }
+    a {
+        color: #00850d;
+        text-decoration: underline;
     }
     @media (max-width: 576px) {
         font: normal .87rem/18px 'Noto Sans', sans-serif;
@@ -84,5 +85,50 @@
     &:hover {
         background: #FFD400;
         color: #fff;
+    }
+}
+
+.page_title_box {
+    background: #00850D;
+    .page_title {
+        font: bold 1.3rem "Arial";
+        color: #fff;
+        text-transform: uppercase;
+        padding: 20px;
+        @media (max-width: 990px) {
+            padding: 15px;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.input_simple {
+    padding: 15px;
+    border-radius: 5px;
+    background: #e5e5e5;
+    font: normal 1rem 'Noto Sans', sans-serif;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    @media (max-width: 990px) {
+        padding: 12px;
+        font-size: .95rem;
+    }
+}
+
+.simple_textarea {
+    height: 200px;
+    padding: 15px;
+    border-radius: 5px;
+    background: #e5e5e5;
+    font: normal 1rem 'Noto Sans', sans-serif;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    @media (max-width: 990px) {
+        padding: 12px;
+        height: 150px;
+        font-size: .95rem;
     }
 }

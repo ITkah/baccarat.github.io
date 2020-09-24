@@ -1,0 +1,41 @@
+.sitemap_wrapper {
+    background: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.sitemap_content {
+    padding: 20px;
+    @media (max-width: 990px) {
+        padding: 15px;
+    }
+    .text_simple {
+        margin-bottom: 20px;
+    }
+    ul {
+        margin: 10px 0;
+        li {
+            .sub-menu {
+                margin-left: 20px;
+            }
+            a {
+                font: normal .95rem 'Noto Sans', sans-serif;
+                margin-bottom: 5px;
+                display: block;
+                padding-left: 20px;
+                color: #00850d;
+                position: relative;
+                &::before {
+                    content: '';
+                    background: url(../img/icon/header-chip.svg) no-repeat center center;
+                    background-size: 15px 15px;
+                    height: 15px;
+                    width: 15px;
+                    top: 3px;
+                    left: 0;
+                    position: absolute;
+                }
+            }
+        }
+    }
+}

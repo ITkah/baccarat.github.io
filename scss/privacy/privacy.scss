@@ -1,0 +1,78 @@
+.privacy_wrapper {
+    background: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.simple_content {
+    padding: 20px;
+    @media (max-width: 990px) {
+        padding: 15px;
+    }
+    h1,
+    h2 {
+        margin-bottom: 20px;
+        font: bold 1.3rem "Arial";
+        position: relative;
+        display: inline-block;
+        @media (max-width: 990px) {
+            margin-bottom: 12px;
+            font-size: 1.2rem;
+        }
+        &::before {
+            content: '';
+            height: 2px;
+            position: absolute;
+            bottom: -5px;
+            width: 100%;
+            background: #00850d;
+            display: block;
+        }
+    }
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-bottom: 10px;
+        font: bold 1.2rem "Arial";
+        position: relative;
+        display: inline-block;
+        @media (max-width: 990px) {
+            margin-bottom: 10px;
+            font-size: 1.05rem;
+        }
+        &::before {
+            display: none;
+        }
+    }
+    p {
+        margin-bottom: 20px;
+        line-height: 25px;
+        @media (max-width: 990px) {
+            margin-bottom: 15px;
+        }
+    }
+    ul,
+    ol {
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        li {
+            font: normal .95rem 'Noto Sans', sans-serif;
+            margin-bottom: 5px;
+            display: block;
+            padding-left: 20px;
+            position: relative;
+            &::before {
+                content: '';
+                background: url(../img/icon/header-chip.svg) no-repeat center center;
+                background-size: 15px 15px;
+                height: 15px;
+                width: 15px;
+                top: 3px;
+                left: 0;
+                position: absolute;
+            }
+        }
+    }
+}
