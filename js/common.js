@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    jQuery('.wrapper_section, .right_panel_wrap').theiaStickySidebar({
+        additionalMarginTop: 25
+    });
     $(".call_menu").on("click", function(e) {
         e.preventDefault();
         $("nav").addClass("active_menu");

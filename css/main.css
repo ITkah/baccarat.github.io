@@ -3,7 +3,13 @@ header {
   margin-bottom: 30px; }
   @media (max-width: 990px) {
     header {
-      margin-bottom: 10px; } }
+      margin-bottom: 10px;
+      width: 100%;
+      position: fixed;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      z-index: 99;
+      top: 0; } }
   header ::-webkit-scrollbar-thumb {
     background-color: #FFD400; }
 
@@ -45,7 +51,7 @@ header {
           -ms-flex-pack: justify;
               justify-content: space-between;
       position: relative;
-      right: -10px; } }
+      right: -5px; } }
   .mob_panel_header a {
     margin-left: 16px;
     position: relative;
@@ -351,8 +357,8 @@ header {
     height: 20px;
     width: 20px;
     z-index: 9;
-    right: 60px;
-    top: 2px;
+    right: 58px;
+    top: 1.5px;
     display: block; } }
 
 nav {
@@ -397,6 +403,8 @@ nav {
       left: 0;
       top: 0;
       right: 0;
+      -webkit-box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.6);
+              box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.6);
       z-index: 999; } }
   nav .mob_lang {
     display: none; }
@@ -622,7 +630,7 @@ nav {
     color: #fff; }
     @media (max-width: 990px) {
       .header_logo p {
-        font-size: 1.125rem; } }
+        font-size: 1.2rem; } }
 
 .header_lang {
   display: -webkit-box;
@@ -679,7 +687,8 @@ nav {
           box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
   overflow: hidden;
-  padding: 15px; }
+  padding: 15px;
+  margin-bottom: 55px; }
   @media (max-width: 990px) {
     .right_panel {
       display: none; } }
@@ -793,7 +802,8 @@ nav {
   font: bold 3.125rem "Arial"; }
   @media (max-width: 990px) {
     .main_section .main_section_title {
-      font: bold 1.2rem "Arial"; } }
+      font: bold 1.45rem "Arial";
+      margin-bottom: 10px; } }
 
 .main_section .main_sm_title {
   font: bold 1.2rem "Arial";
@@ -1975,7 +1985,8 @@ nav {
         left: 0;
         position: absolute; }
 
-html, body {
+html,
+body {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -1985,8 +1996,8 @@ html, body {
   font-family: 'Noto Sans', sans-serif; }
 
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   background-color: #e2e2e2; }
 
 ::-webkit-scrollbar-thumb {
@@ -2042,8 +2053,12 @@ a {
 main {
   min-height: -webkit-calc(100vh - 80px);
   min-height: calc(100vh - 80px); }
+  @media (max-width: 990px) {
+    main {
+      margin-top: 80px; } }
 
-a, button {
+a,
+button {
   text-decoration: none;
   cursor: pointer; }
 

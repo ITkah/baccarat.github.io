@@ -3,6 +3,11 @@ header {
     margin-bottom: 30px;
     @media (max-width: 990px) {
         margin-bottom: 10px;
+        width: 100%;
+        position: fixed;
+        box-sizing: border-box;
+        z-index: 99;
+        top: 0;
     }
      ::-webkit-scrollbar-thumb {
         background-color: #FFD400;
@@ -29,7 +34,7 @@ header {
         align-items: center;
         justify-content: space-between;
         position: relative;
-        right: -10px;
+        right: -5px;
     }
     a {
         margin-left: 16px;
@@ -313,8 +318,8 @@ header {
         height: 20px;
         width: 20px;
         z-index: 9;
-        right: 60px;
-        top: 2px;
+        right: 58px;
+        top: 1.5px;
         display: block;
     }
 }
@@ -339,6 +344,7 @@ nav {
         left: 0;
         top: 0;
         right: 0;
+        box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.6);
         z-index: 999;
     }
     .mob_lang {
@@ -517,7 +523,7 @@ nav {
         font: bold 1.5rem "Arial";
         color: #fff;
         @media (max-width: 990px) {
-            font-size: 1.125rem;
+            font-size: 1.2rem;
         }
     }
 }
@@ -568,6 +574,7 @@ nav {
     border-radius: 5px;
     overflow: hidden;
     padding: 15px;
+    margin-bottom: 55px;
     @media (max-width: 990px) {
         display: none;
     }
